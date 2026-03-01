@@ -1,10 +1,10 @@
 import streamlit as st
 import speech_recognition as sr
-import pyttsx3
+#import pyttsx3
 import openai
 
 # --------- Initialize TTS -----------
-engine = pyttsx3.init()
+#engine = pyttsx3.init()
 
 # --------- Streamlit UI -----------
 st.title("Orion Voice Assistant")
@@ -45,4 +45,5 @@ if st.button("🎤 Speak Now"):
             engine.runAndWait()
             
         except Exception as e:
+
             st.error("Sorry, could not understand audio")
